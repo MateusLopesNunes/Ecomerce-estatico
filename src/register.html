@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <div class="navbar">
+        <nav class="nav">
+            <a href="index.html" class="link">
+                <div class="logo"><i class="fas fa-dolly-flatbed icon"></i>&nbsp;Loja paraiso</div>            
+            </a>
+            <a href="products.html" class="link linkProduct white">Produtos</a>
+            <a href="register.html" class="link linkRegister white">Cadastro</a>
+        </nav>
+    </div>
+    <div class="container">
+        <div></div>
+        <main class="main">
+            <h1>Cadastro de usuário</h1>
+            <!--O verbo http ideal para formulários de cadastro é o 'post',
+            o verbo get só foi usado neste formulario para simular uma aplicação real,
+            porque o verbo post daria uma erro por não ser tratado pelo servidor(que ainda não existe)
+            -->
+            <form action="products.html" method="get">
+                <div class="grid2fr">
+                    <div>
+                        <label for="name">Nome completo:</label>
+                        <input type="text" name="name" id="name" class="inputs" placeholder="Informe seu nome">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" class="inputs" placeholder="Informe seu email">
+                    </div>
+                </div>
+                <div class="grid3fr">
+                    <div>
+                        <label for="cpf">Cpf:</label>
+                        <br>
+                        <input type="text" name="cpf" id="cpf" class="inputs" placeholder="Informe seu cpf">
+                    </div>
+                    <div>
+                        <label for="birthDate">Data de nascimento:</label>
+                        <input type="date" name="birthDate" id="birthDate" class="inputs"
+                            placeholder="Informe sua data de nascimento">
+                    </div>
+                    <select name="cidade" id="cidade" class="inputs">
+                        <option selected>Selecione uma cidade</option>
+                        <option>Faina(GO)</option>
+                        <option>Ceres(GO)</option>
+                        <option>Itapuranga(GO)</option>
+                        <option>Rialma(GO)</option>
+                    </select>
+                </div>
+                <div class="grid2fr">
+                    <div>
+                        <label for="telP">Telefone pessoal:</label>
+                        <input type="tel" name="telP" id="telP" class="inputs" placeholder="Informe seu telefone">
+                    </div>
+                    <div>
+                        <label for="email">Telefone residencial:</label>
+                        <input type="email" name="email" id="email" class="inputs" placeholder="Informe seu telefone">
+                    </div>
+                </div>
+                <div class="grid3fr">
+                    <div>
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" name="endereco" id="endereco" class="inputs"
+                            placeholder="Informe seu endereco">
+                    </div>
+                    <div>
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" name="bairro" id="bairro" class="inputs" placeholder="Informe seu bairro">
+                    </div>
+                    <div>
+                        <label for="cep">Cep:</label>
+                        <br>
+                        <input type="number" name="cep" id="cep" class="inputs" placeholder="Informe seu cep">
+                    </div>
+                </div>
+                <button type="submit" class="btnSubmit white" onclick="alert('Cadastro simulado realizado com sucesso')">Registrar</button>
+            </form>
+        </main>
+        <div></div>
+    </div>
+    <div class="footer">
+        <footer class="footerContent white">
+            <span>Site desenvolvido por <a href="https://github.com/MateusLopesNunes">Mateus Lopes Nunes</a></span>
+        </footer>
+    </div>
+</body>
+
+</html>
