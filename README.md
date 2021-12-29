@@ -1,4 +1,4 @@
-# Trabalho acadêmico da materia 'progeamação web 1'
+# Trabalho acadêmico da materia 'programação web 1'
 
 ## Enunciado
 1. Faça um site completo de cadastro de clientes de uma loja virtual de eletrônicos, 
